@@ -1,0 +1,33 @@
+references:
+  - "https://en.wikipedia.org/wiki/Mercedes-Benz_E-Class"
+
+generations:
+  - name: "First Generation (W124)"
+    start_year: 1993
+    end_year: 1997
+    description: "E-Class nameplate adopted in August 1993. Sedan (W124), Coupe (C124), Convertible (A124), and Estate (S124) body configurations. Sedans produced through 1995, estates and coupes through 1996, cabriolets finished in 1997."
+
+  - name: "Second Generation (W210)"
+    start_year: 1995
+    end_year: 2003
+    description: "Launched in January 1995. Featured four large oval headlights. The sedan was replaced by the W211 in 2002, while the wagon version continued to be sold until March 2003. A facelift was introduced in September 1999."
+
+  - name: "Third Generation (W211)"
+    start_year: 2002
+    end_year: 2009
+    description: "Launched in 2002. Featured a major redesign with more aggressive, squared design language. Facelifted in June 2006 for the 2007 model year to address quality and technical issues."
+
+  - name: "Fourth Generation (W212)"
+    start_year: 2009
+    end_year: 2016
+    description: "Replaced the W211 in 2009 as a 2010 model. Featured new safety and convenience technologies including blind spot monitor, Lane Keeping Assist, Pre-safe with Attention Assist, and Night View Assist Plus. In 2013, received a comprehensive facelift with significant styling changes, fuel economy improvements, and updated safety features. The facelift featured singular front lights replacing twin headlamp design with integrated LED daytime running lights."
+
+  - name: "Fifth Generation (W213)"
+    start_year: 2016
+    end_year: 2023
+    description: "Unveiled at the 2016 North American International Auto Show. Design incorporates cues from the larger W222 S-Class and smaller W205 C-Class. Features a switch to inline six-cylinder engines from previous V6 engines and new generation four-cylinder diesel engines. Second-most technologically advanced Mercedes after S-Class. Includes autonomous driving capability up to 130 mph for up to 2 minutes. Received a mid-generation facelift in 2020."
+
+  - name: "Sixth Generation (W214)"
+    start_year: 2023
+    end_year: null
+    description: "Debuted on April 25, 2023. Body styles include sedan and wagon, while coupes and convertibles were discontinued and will slot under the new CLE nameplate. Current production generation."
