@@ -1,0 +1,8 @@
+command_id: 7E5.226071
+test_cases:
+- expected_values:
+    MERCEDES_CNVRTR_REQ_V: 0
+  response: 7ED056260710000
+- expected_values:
+    MERCEDES_CNVRTR_REQ_V: 25
+  response: 7ED0562607103E8
