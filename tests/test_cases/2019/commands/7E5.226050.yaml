@@ -4,8 +4,8 @@ test_cases:
     MERCEDES_HV_SOC: 42
   response: 7ED056260501068
 - expected_values:
-    MERCEDES_HV_SOC: 53.8
-  response: 7ED056260501504
+    MERCEDES_HV_SOC: 58.9
+  response: 7ED056260501702
 - expected_values:
     MERCEDES_HV_SOC: 87
   response: 7ED0562605021FC
