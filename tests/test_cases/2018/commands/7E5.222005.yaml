@@ -1,8 +1,8 @@
 command_id: 7E5.222005
 test_cases:
 - expected_values:
-    MERCEDES_AUX_V: 12.2898
-  response: 7ED0462200579
+    MERCEDES_AUX_V: 11.68039
+  response: 7ED0462200573
 - expected_values:
     MERCEDES_AUX_V: 14.93059
   response: 7ED0462200593
