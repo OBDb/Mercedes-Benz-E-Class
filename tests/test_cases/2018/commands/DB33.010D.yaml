@@ -7,6 +7,12 @@ test_cases:
     18DAF15A03410D03
     18DAF15803410D03
 - expected_values:
+    VSS: 0
+  response: |-
+    18DAF15A03410D00
+    18DAF15803410D00
+    18DAF15903410D00
+- expected_values:
     VSS: 5
   response: |-
     18DAF15A03410D05
