@@ -1,0 +1,5 @@
+command_id: 7E5.226050
+test_cases:
+- expected_values:
+    MERCEDES_HV_SOC: 42
+  response: 7ED056260501068
