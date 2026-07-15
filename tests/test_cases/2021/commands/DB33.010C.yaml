@@ -1,0 +1,9 @@
+command_id: DB33.010C
+test_cases:
+- expected_values:
+    RPM: 737
+  response: |-
+    18DAF15904410C0B84
+    18DAF15A04410C0B84
+    18DAF15804410C0BA2
+    18DAF18704410C0B84
