@@ -95,6 +95,7 @@ supported_commands_by_ecu:
   - 0107:LONGFT1
   - 0108:SHRTFT2,SHRTFT4
   - 0109:LONGFT2,LONGFT4
+  - 010B:MAP
   - 010C:RPM
   - 010D:VSS
   - 010E:SPARKADV
@@ -105,6 +106,7 @@ supported_commands_by_ecu:
   - 011C:OBDSUP
   - 011F:RUNTM
   - 0121:MIL_DIST
+  - 0123:FRP
   - 012E:EVAP_PCT
   - 012F:FLI
   - 0130:WARM_UPS
@@ -117,11 +119,13 @@ supported_commands_by_ecu:
   - 0142:VPWR
   - 0143:LOAD_ABS
   - 0144:EQ_RAT
+  - 0145:TP_R
   - 0146:AAT
   - 0147:TP_B
   - 0148:TP_C
   - 0149:APP_D
   - 014A:APP_E
+  - 014C:TAC_PCT
   - 0151:FUEL_TYP
   - 0156:LGSO2FT1
   - 0158:LGSO2FT2
