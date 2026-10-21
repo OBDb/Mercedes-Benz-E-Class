@@ -1,4 +1,91 @@
 { "commands": [
-
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0163"}, "freq": 5,
+  "signals": [
+    {"id": "ECLASS_BOOST_AIR_T", "path": "Engine", "fmt": {"bix": 48,  "len": 16, "max": 6280,  "min": -273,   "div": 10, "add": -273.1,               "unit": "celsius" }, "name": "Boost air temperature"},
+    {"id": "ECLASS_BOOST_P",     "path": "Engine", "fmt": {"bix": 120, "len": 16, "max": 32767, "min": -32768,                           "sign": true, "unit": "unknown" }, "name": "Boost pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0168"}, "freq": 1,
+  "signals": [
+    {"id": "ECLASS_EXH_BACK_P", "path": "Engine", "fmt": {            "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "unknown" }, "name": "Exhaust back pressure"},
+    {"id": "ECLASS_DPF_DIFF_P", "path": "Engine", "fmt": {"bix": 320, "len": 16, "max": 32767, "min": -32768, "sign": true, "unit": "unknown" }, "name": "Diesel particulate filter differential pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "016B"}, "freq": 30,
+  "signals": [
+    {"id": "ECLASS_ODO", "path": "Trips", "fmt": {"bix": 288, "len": 16, "max": 131070, "mul": 2, "unit": "kilometers" }, "name": "Odometer"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "016F"}, "freq": 5,
+  "signals": [
+    {"id": "ECLASS_FUEL_T", "path": "Fuel", "fmt": {"bix": 128, "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273, "unit": "celsius" }, "name": "Fuel temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2017"}, "freq": 5,
+  "signals": [
+    {"id": "ECLASS_RADIATOR_T", "path": "Engine", "fmt": { "len": 16, "max": 55327, "mul": 27, "div": 32, "add": 32, "unit": "fahrenheit" }, "name": "Radiator temperature"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2030"}, "freq": 1,
+  "signals": [
+    {"id": "ECLASS_FUEL_TANK_LEVEL", "path": "Fuel", "fmt": { "len": 16, "max": 6549, "mul": 0.099934824, "unit": "liters" }, "name": "Fuel tank level"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2071"}, "freq": 1,
+  "signals": [
+    {"id": "ECLASS_FUEL_RAIL_P", "path": "Fuel", "fmt": { "len": 16, "max": 32758, "mul": 0.4998701, "unit": "kilopascal" }, "name": "Fuel rail pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2095"}, "freq": 5,
+  "signals": [
+    {"id": "ECLASS_EOT", "path": "Engine", "fmt": { "len": 8, "max": 290, "min": -54, "mul": 27, "div": 20, "add": -54, "unit": "fahrenheit" }, "name": "Engine oil temperature"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "30"}, "freq": 5,
+  "signals": [
+    {"id": "ECLASS_TQ_CONV_SLIP", "path": "Transmission", "fmt": {"bix": 8,  "len": 8, "max": 255,                                             "unit": "rpm"        }, "name": "Torque converter slip"},
+    {"id": "ECLASS_CURRENT_GEAR", "path": "Transmission", "fmt": {"bix": 80, "len": 8, "max": 255,                                             "unit": "scalar"     }, "name": "Current gear"},
+    {"id": "ECLASS_ATF_T_VAR_1",  "path": "Transmission", "fmt": {"bix": 88, "len": 8, "max": 401, "min": -58, "mul": 9, "div": 5, "add": -58, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 1"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "34"}, "freq": 5,
+  "signals": [
+    {"id": "ECLASS_ATF_T_VAR_3", "path": "Transmission", "fmt": {"bix": 72, "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 3"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "0230"}, "freq": 5,
+  "signals": [
+    {"id": "ECLASS_ATF_T_VAR_2", "path": "Transmission", "fmt": {"bix": 88, "len": 8, "max": 401, "min": -58, "mul": 9, "div": 5, "add": -58, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 2"}
+  ]},
+{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "0234"}, "freq": 5,
+  "signals": [
+    {"id": "ECLASS_ATF_T_VAR_4", "path": "Transmission", "fmt": {"bix": 24, "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 4"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "2005"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2022 },
+  "signals": [
+    {"id": "ECLASS_AUX_V", "path": "Battery", "fmt": { "len": 8, "max": 25.9, "mul": 25.9, "div": 255, "unit": "volts" }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6050"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2022 },
+  "signals": [
+    {"id": "ECLASS_HV_SOC", "path": "Battery", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "HV battery state of charge", "suggestedMetric": "stateOfCharge"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6053"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2022 },
+  "signals": [
+    {"id": "ECLASS_HV_A", "path": "Battery", "fmt": { "len": 16, "max": 1000, "min": -1000, "div": 10, "sign": true, "unit": "amps" }, "name": "HV battery amperage"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6071"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2022 },
+  "signals": [
+    {"id": "ECLASS_CNVRTR_REQ_V", "path": "Battery", "fmt": { "len": 16, "max": 1000, "mul": 250, "div": 10000, "unit": "volts" }, "name": "DC converter requested voltage"}
+  ]},
+{ "hdr": "7E5", "cmd": {"22": "6075"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2022 },
+  "signals": [
+    {"id": "ECLASS_HV_V", "path": "Battery", "fmt": { "len": 16, "max": 1000, "mul": 25, "div": 1000, "unit": "volts" }, "name": "HV battery voltage"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "proto": "15765-4-11bit", "cmd": {"22": "2001"}, "freq": 0.25, "dbgfilter": { "to": 2016, "from": 2022 },
+  "signals": [
+    {"id": "ECLASS_TIRE_FL_VSS", "path": "Movement", "fmt": {           "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "ECLASS_TIRE_FR_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "ECLASS_TIRE_RL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
+    {"id": "ECLASS_TIRE_RR_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 655.34, "div": 100, "nullmax": 655.34, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "7E2", "rax": "7EA", "proto": "15765-4-11bit", "cmd": {"22": "2002"}, "freq": 0.25, "dbgfilter": { "to": 2016, "from": 2022 },
+  "signals": [
+    {"id": "ECLASS_LON_ACC",        "path": "Orientation", "fmt": {"bix": 8,   "len": 16, "max": 1.63,   "min": -1.63,                  "div": 20000,       "sign": true, "unit": "gravity" }, "name": "Longitudinal acceleration"},
+    {"id": "ECLASS_LAT_ACC",        "path": "Orientation", "fmt": {"bix": 24,  "len": 16, "max": 511,    "min": -512,    "mul": 15.625, "div": 1000,        "sign": true, "unit": "gravity" }, "name": "Lateral acceleration"},
+    {"id": "ECLASS_YAW_RATE",       "path": "Orientation", "fmt": {"bix": 48,  "len": 16, "max": 2,      "min": -2,      "mul": 2,      "div": 32767,       "sign": true, "unit": "radians" }, "name": "Yaw rate",                       "description": "The angular velocity of the car around its vertical axis. Indicates how quickly the car is rotating to its left or right."},
+    {"id": "ECLASS_STEER_ANGLE",    "path": "Control",     "fmt": {"bix": 72,  "len": 16, "max": 3276.7, "min": -3276.8,                "div": 10,          "sign": true, "unit": "degrees" }, "name": "Steering wheel angle",           "description": "Positive is rotated to the right, negative is rotated to the left."},
+    {"id": "ECLASS_MCYL_BRAKE_P",   "path": "Control",     "fmt": {"bix": 96,  "len": 16, "max": 501.34, "min": -501.34,                "div": 65.35883831, "sign": true, "unit": "bars"    }, "name": "Master brake cylinder pressure"},
+    {"id": "ECLASS_BRAKE_VACUUM_P", "path": "Control",     "fmt": {"bix": 144, "len": 16, "max": 65,                                    "div": 1000,                      "unit": "bars"    }, "name": "Brake booster vacuum pressure"}
+  ]}
 ]
 }

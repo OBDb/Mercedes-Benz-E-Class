@@ -1,14 +1,14 @@
 command_id: 7E5.226075
 test_cases:
 - expected_values:
-    MERCEDES_HV_V: 100
+    ECLASS_HV_V: 260
   response: 7ED0562607528A0
 - expected_values:
-    MERCEDES_HV_V: 100
+    ECLASS_HV_V: 364.8
   response: 7ED056260753900
 - expected_values:
-    MERCEDES_HV_V: 100
+    ECLASS_HV_V: 371.1
   response: 7ED0562607539FC
 - expected_values:
-    MERCEDES_HV_V: 100
+    ECLASS_HV_V: 384
   response: 7ED056260753C00
