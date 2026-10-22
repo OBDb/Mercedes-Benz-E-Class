@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.222071
+test_cases:
+- expected_values:
+    ECLASS_FUEL_RAIL_P: 12863.15728
+  response: '7E8056220716485'
+- expected_values:
+    ECLASS_FUEL_RAIL_P: 12906.14611
+  response: 7E80562207164DB
+- expected_values:
+    ECLASS_FUEL_RAIL_P: 12942.13676
+  response: '7E8056220716523'
+- expected_values:
+    ECLASS_FUEL_RAIL_P: 19987.30595
+  response: 7E8056220719C31
