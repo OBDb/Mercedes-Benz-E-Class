@@ -1,4 +1,8 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "7E0", "type": "engine" },
+    { "hdr": "7E1", "type": "transmission" }
+  ],
+  "commands": [
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0163"}, "freq": 5,
   "signals": [
     {"id": "ECLASS_BOOST_AIR_T", "path": "Engine", "fmt": {"bix": 48,  "len": 16, "max": 6280,  "min": -273,   "div": 10, "add": -273.1,               "unit": "celsius" }, "name": "Boost air temperature"},
@@ -17,19 +21,19 @@
   "signals": [
     {"id": "ECLASS_FUEL_T", "path": "Fuel", "fmt": {"bix": 128, "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2017"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "2017"}, "freq": 5, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
     {"id": "ECLASS_RADIATOR_T", "path": "Engine", "fmt": { "len": 16, "max": 55327, "mul": 27, "div": 32, "add": 32, "unit": "fahrenheit" }, "name": "Radiator temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2030"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "2030"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
     {"id": "ECLASS_FUEL_TANK_LEVEL", "path": "Fuel", "fmt": { "len": 16, "max": 6549, "mul": 0.099934824, "unit": "liters" }, "name": "Fuel tank level"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2071"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "2071"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
     {"id": "ECLASS_FUEL_RAIL_P", "path": "Fuel", "fmt": { "len": 16, "max": 32758, "mul": 0.4998701, "unit": "kilopascal" }, "name": "Fuel rail pressure"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2095"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"22": "2095"}, "freq": 5, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
     {"id": "ECLASS_EOT", "path": "Engine", "fmt": { "len": 8, "max": 290, "min": -54, "mul": 27, "div": 20, "add": -54, "unit": "fahrenheit" }, "name": "Engine oil temperature"}
   ]},
@@ -43,7 +47,7 @@
   "signals": [
     {"id": "ECLASS_ATF_T_VAR_3", "path": "Transmission", "fmt": {"bix": 72, "len": 16, "max": 3276, "min": -3276, "div": 10, "sign": true, "unit": "celsius" }, "name": "Transmission fluid temperature, variant 3"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "0230"}, "freq": 5,
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"22": "0230"}, "freq": 5, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
     {"id": "ECLASS_ATF_T_VAR_2", "path": "Transmission", "fmt": {"bix": 88, "len": 8, "max": 401, "min": -58, "mul": 9, "div": 5, "add": -58, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 2"}
   ]},
