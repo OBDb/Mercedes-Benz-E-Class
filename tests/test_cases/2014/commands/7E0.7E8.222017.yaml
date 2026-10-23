@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.222017
+test_cases:
+- expected_values:
+    ECLASS_RADIATOR_T: 505.34375
+  response: '7E8056220170231'
