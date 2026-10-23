@@ -1,0 +1,9 @@
+command_id: 7E1.7E9.220230
+test_cases:
+- expected_values:
+    ECLASS_ATF_T_VAR_2: 167
+  response: |-
+    7E91019620230000500
+    7E92105080403150107
+    7E922777D006400640A
+    7E9237380400000AAAA

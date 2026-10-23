@@ -1,0 +1,5 @@
+command_id: 7E0.7E8.222071
+test_cases:
+- expected_values:
+    ECLASS_FUEL_RAIL_P: 19766.86323
+  response: 7E8056220719A78
