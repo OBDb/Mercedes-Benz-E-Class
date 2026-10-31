@@ -1,6 +1,9 @@
 command_id: 7E0.7E8.222030
 test_cases:
 - expected_values:
+    ECLASS_FUEL_TANK_LEVEL: 17.98827
+  response: 7E80562203000B4
+- expected_values:
     ECLASS_FUEL_TANK_LEVEL: 18.98762
   response: 7E80562203000BE
 - expected_values:
