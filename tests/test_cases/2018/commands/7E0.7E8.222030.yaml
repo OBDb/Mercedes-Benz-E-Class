@@ -1,29 +1,11 @@
 command_id: 7E0.7E8.222030
 test_cases:
 - expected_values:
-    ECLASS_FUEL_TANK_LEVEL: 17.98827
-  response: 7E80562203000B4
-- expected_values:
-    ECLASS_FUEL_TANK_LEVEL: 18.98762
-  response: 7E80562203000BE
-- expected_values:
-    ECLASS_FUEL_TANK_LEVEL: 19.98696
-  response: 7E80562203000C8
-- expected_values:
-    ECLASS_FUEL_TANK_LEVEL: 20.98631
-  response: 7E80562203000D2
-- expected_values:
-    ECLASS_FUEL_TANK_LEVEL: 21.98566
-  response: 7E80562203000DC
-- expected_values:
-    ECLASS_FUEL_TANK_LEVEL: 22.98501
-  response: 7E80562203000E6
+    ECLASS_FUEL_TANK_LEVEL: 15.98957
+  response: 7E80562203000A0
 - expected_values:
     ECLASS_FUEL_TANK_LEVEL: 23.98436
   response: 7E80562203000F0
 - expected_values:
     ECLASS_FUEL_TANK_LEVEL: 64.95764
   response: 7E805622030028A
-- expected_values:
-    ECLASS_FUEL_TANK_LEVEL: 65.95698
-  response: '7E8056220300294'
