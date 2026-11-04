@@ -1,8 +1,8 @@
 command_id: 7E0.7E8.222095
 test_cases:
 - expected_values:
-    ECLASS_EOT: 62.1
-  response: '7E80462209556'
+    ECLASS_EOT: 60.75
+  response: '7E80462209555'
 - expected_values:
     ECLASS_EOT: 205.2
   response: 7E804622095C0
