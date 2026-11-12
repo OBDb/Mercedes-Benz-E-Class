@@ -1,6 +1,13 @@
 command_id: 7E1.7E9.220230
 test_cases:
 - expected_values:
+    ECLASS_ATF_T_VAR_2: 111.2
+  response: |-
+    7E91019620230000000
+    7E92100000000180100
+    7E922DD5EFFFFFFFF00
+    7E9230080206000AAAA
+- expected_values:
     ECLASS_ATF_T_VAR_2: 167
   response: |-
     7E91019620230000500
