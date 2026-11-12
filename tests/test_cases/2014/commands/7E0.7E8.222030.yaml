@@ -3,3 +3,6 @@ test_cases:
 - expected_values:
     ECLASS_FUEL_TANK_LEVEL: 75.95047
   response: 7E80562203002F8
+- expected_values:
+    ECLASS_FUEL_TANK_LEVEL: 82.34629
+  response: '7E8056220300338'
