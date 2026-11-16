@@ -84,8 +84,8 @@
   ]},
 { "hdr": "7E2", "rax": "7EA", "proto": "15765-4-11bit", "cmd": {"22": "2002"}, "freq": 0.25, "dbgfilter": { "to": 2016, "from": 2022 },
   "signals": [
-    {"id": "ECLASS_LON_ACC",        "path": "Orientation", "fmt": {"bix": 8,   "len": 16, "max": 1.63,   "min": -1.63,                  "div": 20000,       "sign": true, "unit": "gravity" }, "name": "Longitudinal acceleration"},
-    {"id": "ECLASS_LAT_ACC",        "path": "Orientation", "fmt": {"bix": 24,  "len": 16, "max": 511,    "min": -512,    "mul": 15.625, "div": 1000,        "sign": true, "unit": "gravity" }, "name": "Lateral acceleration"},
+    {"id": "ECLASS_LON_ACC",        "path": "Orientation", "fmt": {"bix": 8,   "len": 16, "max": 1.63,   "min": -1.63,                  "div": 20000,       "sign": true, "unit": "gravity" }, "name": "Longitudinal acceleration",      "suggestedMetric": "longitudinalAcceleration"},
+    {"id": "ECLASS_LAT_ACC",        "path": "Orientation", "fmt": {"bix": 24,  "len": 16, "max": 511,    "min": -512,    "mul": 15.625, "div": 1000,        "sign": true, "unit": "gravity" }, "name": "Lateral acceleration",           "suggestedMetric": "lateralAcceleration"},
     {"id": "ECLASS_YAW_RATE",       "path": "Orientation", "fmt": {"bix": 48,  "len": 16, "max": 2,      "min": -2,      "mul": 2,      "div": 32767,       "sign": true, "unit": "radians" }, "name": "Yaw rate",                       "description": "The angular velocity of the car around its vertical axis. Indicates how quickly the car is rotating to its left or right."},
     {"id": "ECLASS_STEER_ANGLE",    "path": "Control",     "fmt": {"bix": 72,  "len": 16, "max": 3276.7, "min": -3276.8,                "div": 10,          "sign": true, "unit": "degrees" }, "name": "Steering wheel angle",           "description": "Positive is rotated to the right, negative is rotated to the left."},
     {"id": "ECLASS_MCYL_BRAKE_P",   "path": "Control",     "fmt": {"bix": 96,  "len": 16, "max": 501.34, "min": -501.34,                "div": 65.35883831, "sign": true, "unit": "bars"    }, "name": "Master brake cylinder pressure"},
