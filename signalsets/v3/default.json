@@ -57,7 +57,7 @@
   ]},
 { "hdr": "7E5", "cmd": {"22": "2005"}, "freq": 1, "dbgfilter": { "to": 2015, "years": [2017], "from": 2022 },
   "signals": [
-    {"id": "ECLASS_AUX_V", "path": "Battery", "fmt": { "len": 8, "max": 25.9, "mul": 25.9, "div": 255, "unit": "volts" }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"}
+    {"id": "ECLASS_AUX_V", "path": "Battery", "fmt": { "len": 8, "max": 25.9, "mul": 25.9, "div": 255, "nullmin": 0, "unit": "volts" }, "name": "Auxiliary battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
 { "hdr": "7E5", "cmd": {"22": "6050"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2022 },
   "signals": [
