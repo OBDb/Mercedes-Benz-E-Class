@@ -4,5 +4,5 @@ test_cases:
     ECLASS_EOT: 59.4
   response: '7E80462209554'
 - expected_values:
-    ECLASS_EOT: 214.65
-  response: 7E804622095C7
+    ECLASS_EOT: 218.7
+  response: 7E804622095CA
