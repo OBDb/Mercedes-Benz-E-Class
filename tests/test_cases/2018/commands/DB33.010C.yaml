@@ -1,17 +1,17 @@
 command_id: DB33.010C
 test_cases:
 - expected_values:
+    RPM: 616
+  response: |-
+    18DAF15804410C098C
+    18DAF15904410C09A0
+    18DAF15A04410C09A0
+- expected_values:
     RPM: 631
   response: |-
     18DAF15804410C09B8
     18DAF15A04410C09C0
     18DAF15904410C09DC
-- expected_values:
-    RPM: 637
-  response: |-
-    18DAF15804410C0A04
-    18DAF15904410C09FC
-    18DAF15A04410C09F4
 - expected_values:
     RPM: 1017
   response: |-
@@ -31,23 +31,17 @@ test_cases:
     18DAF15A04410C1504
     18DAF15904410C1500
 - expected_values:
-    RPM: 1791
+    RPM: 1792
   response: |-
     18DAF15804410C1BFE
-    18DAF15904410C1BFC
-    18DAF15A04410C1BFC
+    18DAF15904410C1BF0
+    18DAF15A04410C1C00
 - expected_values:
     RPM: 2057
   response: |-
     18DAF15804410C1E80
     18DAF15A04410C2018
     18DAF15904410C2024
-- expected_values:
-    RPM: 3649
-  response: |-
-    18DAF15804410C3608
-    18DAF15904410C3904
-    18DAF15A04410C3904
 - expected_values:
     RPM: 629.5
   response: |-
@@ -73,14 +67,14 @@ test_cases:
     18DAF15804410C165E
     18DAF15A04410C1640
 - expected_values:
+    RPM: 5986.5
+  response: |-
+    18DAF15904410C5CA8
+    18DAF15A04410C5CA8
+    18DAF15804410C5D8A
+- expected_values:
     RPM: 627
   response: |-
     18DAF15A04410C09CC
     18DAF15804410C09BA
     18DAF15904410C09CC
-- expected_values:
-    RPM: 3833
-  response: |-
-    18DAF15A04410C3BE0
-    18DAF15804410C3BE6
-    18DAF15904410C3BE4
