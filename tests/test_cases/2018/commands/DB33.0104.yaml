@@ -1,6 +1,12 @@
 command_id: DB33.0104
 test_cases:
 - expected_values:
+    LOAD_PCT: 5.88235
+  response: |-
+    18DAF1580341040E
+    18DAF1590341040F
+    18DAF15A0341040F
+- expected_values:
     LOAD_PCT: 6.27451
   response: |-
     18DAF1580341040E
@@ -13,23 +19,17 @@ test_cases:
     18DAF15A03410410
     18DAF15903410410
 - expected_values:
-    LOAD_PCT: 6.27451
-  response: |-
-    18DAF1580341040F
-    18DAF15903410410
-    18DAF15A03410410
-- expected_values:
     LOAD_PCT: 94.5098
   response: |-
     18DAF158034104F0
     18DAF15A034104F1
     18DAF159034104F1
 - expected_values:
-    LOAD_PCT: 98.43137
+    LOAD_PCT: 100
   response: |-
-    18DAF158034104FD
-    18DAF15A034104FB
-    18DAF159034104FB
+    18DAF158034104FE
+    18DAF159034104FF
+    18DAF15A034104FF
 - expected_values:
     LOAD_PCT: 5.4902
   response: |-
@@ -46,5 +46,5 @@ test_cases:
     LOAD_PCT: 5.4902
   response: |-
     18DAF15A0341040E
-    18DAF1580341040E
+    18DAF1580341040D
     18DAF1590341040E
